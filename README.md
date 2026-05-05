@@ -32,23 +32,21 @@ The decision under test must be:
 
 ## Results
 
-### v0 — 1 case, Claude Sonnet 4, binary constraint
+### v1 (Current) — 3 cases, Claude Sonnet 3.5, mixed constraints
 
-| # | Decision | File | Backed | Unbacked |
-|---|----------|------|--------|----------|
-| 1 | ADR-0003: CC-peer MUST NOT write HANDOFF.md | AGENTS.md | ✅ Honors | ❌ Re-invents rejected pattern |
+| # | Case | Backed | Unbacked | Status |
+|---|------|--------|----------|--------|
+| 1 | ADR-0003: HANDOFF ownership | ✅ Pass | ❌ Fail | **Success** |
+| 2 | ADR-0002: Meta-loop deletion | ✅ Pass | ❌ Fail | **Success** |
+| 3 | ADR-0005: Generic roles | ✅ Pass | ❌ Fail | **Success** |
 
-Full result: [`evals/v0/decision_retention_v0.md`](evals/v0/decision_retention_v0.md)
-
-**Verdict: backed wins on binary constraint.**
+Full results: [`results/2026-05-05.md`](results/2026-05-05.md)
 
 ---
 
 ## Running the evals
 
-v0 is hand-crafted — no automation yet. See [`evals/v0/decision_retention_v0.md`](evals/v0/decision_retention_v0.md) for the full prompt and methodology.
-
-v1 (planned): ≥3 cases, same model, include nuanced trade-off ADRs, automation via `run_eval.py`.
+v1 is a composite of 3 decision-retention cases. See [`evals/v1/README.md`](evals/v1/README.md) for full methodology.
 
 ---
 
