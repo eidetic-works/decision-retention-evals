@@ -64,7 +64,7 @@ To add an eval:
 
 ## Reference implementation
 
-The backed condition in these evals uses [`.brain`](https://github.com/eidetic-works/mcp-server-nucleus) — a portable decision log that Claude Code, Cursor, and Codex all read via one MCP server.
+The backed condition in these evals uses [`.brain`](https://github.com/eidetic-works/nucleus-mcp) — a portable decision log that Claude Code, Cursor, and Codex all read via one MCP server.
 
 ---
 
